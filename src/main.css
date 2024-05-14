@@ -1,0 +1,29 @@
+.navbar {
+  position: sticky;
+  display: block;
+  border: 1px solid black;
+  margin: 0;
+  padding: 25px;
+  text-align: left;
+  padding-left: 10vw;
+}
+
+.navbar a {
+  font-size: 24px;
+  padding-left: 3vw;
+  text-decoration: none;
+  color: black;
+}
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 10px;
+}
