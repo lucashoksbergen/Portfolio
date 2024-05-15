@@ -1,21 +1,35 @@
+body {
+  margin: 0;
+}
+
 .navbar {
   position: sticky;
   display: block;
-  border: 1px solid black;
   margin: 0;
-  padding: 25px;
   text-align: left;
+  padding: 5px;
   padding-left: 10vw;
+  background-color: lightblue;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .navbar a {
+  margin: 0;
   font-size: 24px;
-  padding-left: 3vw;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 25px;
   text-decoration: none;
   color: black;
 }
-body {
-  margin: 0;
+
+.navbar a:hover {
+  background-color: #72cedf;
+}
+
+.active {
+  background-color: #4fc8dd;
 }
 
 ul {
@@ -26,4 +40,15 @@ ul {
 li {
   display: inline;
   margin-right: 10px;
+}
+
+.textbox {
+  background-color: #eeeeee;
+  width: 60vw;
+  margin-left: 20vw;
+  padding: 1vw;
+  text-align: center;
+  display: flex;
+  font-size: 32px;
+  margin-bottom: 1vw;
 }
