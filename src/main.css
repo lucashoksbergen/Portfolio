@@ -78,6 +78,8 @@ li {
   flex-wrap: wrap;
   gap: 10px;
   padding: 10px;
+  justify-content: flex-start;
+  height: auto;
 }
 
 .grid {
@@ -89,4 +91,18 @@ li {
   box-sizing: border-box;
   font-size: clamp(1rem, 2.5vw, 2rem);
   overflow: auto;
+}
+
+#popup {
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  box-sizing: border-box;
+  width: 80vw;
+  height: 80vh;
+  left: 10vw;
+  top: 10vw;
+  border: solid 5px lightgray;
+  background-color: white;
+  padding: 20px;
 }
