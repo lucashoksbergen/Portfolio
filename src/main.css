@@ -106,3 +106,23 @@ li {
   background-color: white;
   padding: 20px;
 }
+
+#popup img {
+  display: block;
+  max-width: 50%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+#transpopup {
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(113, 116, 124, 0.726);
+}
