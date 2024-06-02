@@ -8,7 +8,10 @@ function clickGridItem() {
       child.src = `imgs/${this.innerHTML}.png`;
     }
     if (child.tagName == "P") {
-      child.innerHTML = this.innerHTML;
+      child.innerHTML = sessionStorage.getItem(`${this.innerHTML}`);
+    }
+    if (child.tagName == "VIDEO") {
+      child.src = `vids/${this.innerHTML}.mp4`;
     }
   }
 }
