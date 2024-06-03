@@ -47,3 +47,8 @@ sessionStorage.setItem(
   "Arachnophobia Simulator",
   "placeholdertext describing the project."
 );
+
+sessionStorage.setItem(
+  "Op Jezelf App",
+  "placeholdertext describing the project."
+);

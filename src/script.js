@@ -23,7 +23,7 @@ function closePopup() {
 
 const popupWindow = document.getElementById("popup");
 
-const popupWindowBG = document.getElementById("transpopup");
+const popupWindowBG = document.getElementById("closepopup");
 // adds a click eventlistener to all the projects that are visible in the grid on the projects page.
 const gridItems = Array.from(document.getElementsByClassName("grid"));
 if (gridItems) {
@@ -31,4 +31,3 @@ if (gridItems) {
     element.addEventListener("click", clickGridItem)
   );
 }
-popupWindowBG.addEventListener("click", closePopup);
