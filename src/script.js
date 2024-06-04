@@ -1,7 +1,7 @@
 function clickGridItem() {
   // toggle popupwindow
-  popupWindow.style.visibility = "visible";
-  popupWindowBG.style.visibility = "visible";
+  popupWindow.style.display = "grid";
+  popupWindowClose.style.display = "block";
   for (const child of popupWindow.children) {
     if (child.tagName == "IMG") {
       // replaces the image with an image with the same name as the project chosen.
@@ -17,13 +17,14 @@ function clickGridItem() {
 }
 
 function closePopup() {
-  popupWindow.style.visibility = "hidden";
-  popupWindowBG.style.visibility = "hidden";
+  popupWindow.style.display = "none";
+  popupWindowClose.style.display = "none";
 }
 
 const popupWindow = document.getElementById("popup");
 
-const popupWindowBG = document.getElementById("closepopup");
+const popupWindowClose = document.getElementById("closepopup");
+
 // adds a click eventlistener to all the projects that are visible in the grid on the projects page.
 const gridItems = Array.from(document.getElementsByClassName("grid"));
 if (gridItems) {
