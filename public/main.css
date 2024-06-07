@@ -67,7 +67,7 @@ body {
 .bottom a {
   font-weight: bold;
   line-height: 1rem;
-  font-size: min(1rem, 16px);
+  font-size: min(0.9rem, 16px);
   display: inline-block;
   align-self: flex-end;
 }
@@ -135,15 +135,25 @@ button:hover {
 }
 
 .gridproject {
-  border: solid 5px lightgray;
+  border: solid 3px #6bc9b3;
   width: 400px;
   height: 400px;
-  padding: 20px;
   text-align: center;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  overflow: auto;
   cursor: pointer;
+  overflow: hidden;
   user-select: none;
+}
+.gridproject p {
+  position: fixed;
+  width: 400px;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  padding-top: 10px;
+  color: whitesmoke;
+}
+
+.gridproject img {
+  width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -188,10 +198,9 @@ h1 {
 #closepopup {
   display: none;
   position: fixed;
-  top: min();
+  top: max(7vh, 60px);
   right: 1vw;
   text-align: center;
-  line-height: 3vw;
   /* using vw for both, so its a square */
   width: 3vw;
   height: 3vw;
@@ -200,13 +209,16 @@ h1 {
   font-size: clamp(2rem, 2vw, 3rem);
   user-select: none;
   cursor: pointer;
-  background-color: white;
-  border: 2px solid rgb(211, 211, 211);
+  background-color: whitesmoke;
+  border: 2px solid #6bc9b3;
   z-index: 5;
+  justify-content: center;
+  align-items: center;
 }
 
 #closepopup:hover {
-  background-color: rgb(243, 243, 243);
+  background-color: rgb(226, 226, 226);
+  font-weight: bold;
 }
 
 video {
