@@ -1,8 +1,9 @@
 * {
   margin: 0;
   font-family: sans-serif;
-  font-size: clamp(1rem, 1vw, 1.5rem);
+  font-size: clamp(0.9rem, 1vw, 1.1rem);
   box-sizing: border-box;
+  line-height: 1.5em;
 }
 
 body {
@@ -41,16 +42,21 @@ body {
   bottom: 0;
   width: 100vw;
   margin-top: auto;
-  height: 10vw;
-  min-height: 150px;
-  padding-top: min(1vw, 10px);
+  min-height: 110px;
+  height: 12vh;
   padding-left: 15vw;
   background-color: lightblue;
+  display: flex;
+  padding-bottom: 15px;
 }
 
-.bottom p {
+.bottom p,
+.bottom a {
   font-weight: bold;
-  font-size: clamp(1rem, 1vw, 2rem);
+  line-height: 1rem;
+  font-size: min(1rem, 16px);
+  display: inline-block;
+  align-self: flex-end;
 }
 
 .navbar a:hover {
@@ -71,21 +77,13 @@ li {
   margin-right: 10px;
 }
 
-.centergrid {
-  display: grid;
-  place-items: center;
-  grid-template-columns: repeat(2, auto);
-}
-
-.textbox {
-  margin: 15px;
+.griditem {
   background-color: white;
   box-sizing: content-box;
   justify-content: center;
-  border: 2px solid lightgray;
-  width: 30vw;
+  width: 25vw;
   min-width: 400px;
-  padding: 1vw;
+  padding: 2vw;
   display: block;
 }
 
@@ -103,6 +101,7 @@ li {
 .button:hover {
   background-color: lightgray;
 }
+
 .gridwrapper {
   display: flex;
   flex-wrap: wrap;
@@ -112,7 +111,7 @@ li {
   height: auto;
 }
 
-.grid {
+.gridproject {
   border: solid 5px lightgray;
   width: 400px;
   height: 400px;
@@ -150,6 +149,7 @@ li {
 
 #popup video {
   width: 81vw;
+  min-width: 400px;
   margin-top: 1vh;
 }
 
