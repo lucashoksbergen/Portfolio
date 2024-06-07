@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  font-family: sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   font-size: clamp(0.9rem, 1vw, 1.1rem);
   box-sizing: border-box;
   line-height: 1.5em;
@@ -18,53 +18,57 @@ body {
   box-sizing: content-box;
   text-align: left;
   padding: 5px;
+  top: 0;
   padding-left: 10vw;
-  background-color: lightblue;
+  background-color: #56c5b6;
   font-weight: bold;
-  height: 4vw;
-  min-height: 50px;
+  height: 5vh;
+  min-height: 40px;
 }
 
-.navbar .navbutton {
+.navbar a:hover {
+  background-color: #439c90;
+}
+
+.navbutton {
   font-size: 24px;
   display: inline-block;
-  text-decoration: none;
-  height: 3.9vw;
-  min-height: 48.75px;
-  line-height: max(3.9vw, 48.75px);
+  height: 4.9vh;
+  min-height: 38.75px;
+  line-height: max(2.9vw, 38.75px);
   padding-left: 20px;
   padding-right: 20px;
   color: black;
   text-align: center;
+}
+.navbutton:not(.active) {
+  text-decoration: none;
+}
+
+.active {
+  background-color: #47a598;
+  text-decoration-line: underline;
 }
 
 .bottom {
   bottom: 0;
   width: 100vw;
   margin-top: auto;
-  min-height: 110px;
+  min-height: 120px;
   height: 12vh;
   padding-left: 15vw;
-  background-color: lightblue;
+  background-color: #56c5b6;
   display: flex;
   padding-bottom: 15px;
 }
 
 .bottom p,
 .bottom a {
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1rem;
   font-size: min(1rem, 16px);
   display: inline-block;
   align-self: flex-end;
-}
-
-.navbar a:hover {
-  background-color: #72cedf;
-}
-
-.active {
-  background-color: #4fc8dd;
 }
 
 ul {
@@ -77,6 +81,30 @@ li {
   margin-right: 10px;
 }
 
+button {
+  margin-top: 15px;
+  background-color: rgb(241, 241, 241);
+  padding: 6px 12px 6px 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 1px 1px 3px lightgray;
+}
+
+button:hover {
+  background-color: rgb(228, 228, 228);
+  text-decoration-line: underline;
+}
+
+.gridwrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  justify-content: center;
+  height: auto;
+}
+
 .griditem {
   background-color: white;
   box-sizing: content-box;
@@ -87,28 +115,13 @@ li {
   display: block;
 }
 
-.button {
-  margin: 5px;
-  background-color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  border: 1px solid black;
+#logo {
+  width: 15%;
+  padding: 5px;
 }
-
-.button:hover {
-  background-color: lightgray;
-}
-
-.gridwrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  padding: 10px;
-  justify-content: center;
-  height: auto;
+#photo {
+  width: 80%;
+  border-radius: 50%;
 }
 
 .gridproject {
@@ -123,49 +136,63 @@ li {
   user-select: none;
 }
 
+h1 {
+  font-family: monospace;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+}
+
+#title {
+  margin-top: 25px;
+  display: none;
+  text-align: center;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
 #popup {
   display: none;
-  flex-wrap: wrap;
-  justify-content: center;
   padding: 25px;
   width: 100vw;
   height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #popup p {
-  background-color: rgb(243, 243, 243);
-  padding: 15px;
-  width: 40vw;
+  width: 30vw;
   min-width: 400px;
   margin-right: 1vw;
 }
 
 #popup img {
-  width: 40vw;
+  width: 30vw;
   min-width: 400px;
-
   height: auto;
 }
 
 #popup video {
-  width: 81vw;
+  width: 61vw;
   min-width: 400px;
   margin-top: 1vh;
 }
 
 #closepopup {
-  position: absolute;
-  display: block;
-  top: 1vw;
+  display: none;
+  position: fixed;
+  top: min();
   right: 1vw;
   text-align: center;
-  padding: 0 15px;
-  font-size: 48px;
+  line-height: 3vw;
+  /* using vw for both, so its a square */
+  width: 3vw;
+  height: 3vw;
+  min-width: 40px;
+  min-height: 40px;
+  font-size: clamp(2rem, 2vw, 3rem);
   user-select: none;
   cursor: pointer;
   background-color: white;
-  border: 3px solid rgb(245, 245, 245);
-  z-index: 2;
+  border: 2px solid rgb(211, 211, 211);
+  z-index: 5;
 }
 
 #closepopup:hover {
