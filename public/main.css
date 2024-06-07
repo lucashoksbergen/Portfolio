@@ -1,7 +1,7 @@
 * {
   margin: 0;
   font-family: Verdana, Tahoma, sans-serif;
-  font-size: clamp(0.9rem, 1vw, 1.1rem);
+  font-size: clamp(0.9rem, 1vw, 1rem);
   box-sizing: border-box;
   line-height: 1.5em;
 }
@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: whitesmoke;
 }
 
 .navbar {
@@ -20,14 +21,14 @@ body {
   padding: 5px;
   top: 0;
   padding-left: 10vw;
-  background-color: #56c5b6;
+  background-color: #6bc9b3;
   font-weight: bold;
   height: 5vh;
   min-height: 40px;
 }
 
 .navbar a:hover {
-  background-color: #439c90;
+  background-color: #73d9c1;
 }
 
 .navbutton {
@@ -46,7 +47,7 @@ body {
 }
 
 .active {
-  background-color: #47a598;
+  background-color: #5ead9b;
   text-decoration-line: underline;
 }
 
@@ -57,14 +58,14 @@ body {
   min-height: 120px;
   height: 12vh;
   padding-left: 15vw;
-  background-color: #56c5b6;
+  background-color: #6bc9b3;
   display: flex;
   padding-bottom: 15px;
 }
 
 .bottom p,
 .bottom a {
-  font-weight: normal;
+  font-weight: bold;
   line-height: 1rem;
   font-size: min(1rem, 16px);
   display: inline-block;
@@ -81,18 +82,21 @@ li {
   margin-right: 10px;
 }
 
+.projects {
+  background-color: #6bc9b3;
+}
+
 button {
   margin-top: 15px;
-  background-color: rgb(241, 241, 241);
+  background-color: #6bc9b3;
   padding: 6px 12px 6px 12px;
   letter-spacing: 1px;
   cursor: pointer;
-  border: none;
-  box-shadow: 1px 1px 3px lightgray;
+  border: 1px solid black;
 }
 
 button:hover {
-  background-color: rgb(228, 228, 228);
+  background-color: #73d9c1;
   text-decoration-line: underline;
 }
 
@@ -103,21 +107,27 @@ button:hover {
   padding: 10px;
   justify-content: center;
   height: auto;
+  margin-bottom: 5vh;
 }
 
 .griditem {
-  background-color: white;
   box-sizing: content-box;
   justify-content: center;
-  width: 25vw;
+  width: 15vw;
   min-width: 400px;
   padding: 2vw;
   display: block;
 }
 
 #logo {
-  width: 15%;
-  padding: 5px;
+  box-sizing: content-box;
+  width: 20%;
+  padding: 15px;
+}
+
+#logos {
+  margin-left: 50px;
+  margin-top: 20px;
 }
 #photo {
   width: 80%;
