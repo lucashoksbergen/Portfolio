@@ -100,7 +100,9 @@ sessionStorage.setItem(
    The goal of this app is to simulate a bank-app, which will be used in correlation with a board-game, to simulate the first three months of living on your own.
    The game focuses on teaching the players how to balance their budget, which is done through giving them various choices throughout the game to possibly save money.
    The game relies on the players making the wrong choices, so they can be educated on how to do the correct choices at the end.
-    Hence why the similarities to reality are important. Given that the goal is to teach the users better behaviour
+    Hence why the similarities to reality are important. Given that the goal is to teach the users better behaviour.
+    <br><br>
+    The preview below showcases the functionalities of the app, however it is primarily made for mobile devices, hence why the scale might seem off.
    <br><br>
    Github: <a href='https://github.com/Axisas/OpJezelf'>GitHub</a><br>
    Client: <a href='https://dynhus.nl/'>Dynhus</a>

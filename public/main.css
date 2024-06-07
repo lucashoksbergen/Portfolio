@@ -142,9 +142,11 @@ button:hover {
   cursor: pointer;
   overflow: hidden;
   user-select: none;
+  position: relative;
 }
 .gridproject p {
-  position: fixed;
+  position: absolute;
+  bottom: 10px;
   width: 400px;
   font-size: clamp(1rem, 2vw, 1.5rem);
   padding-top: 10px;
