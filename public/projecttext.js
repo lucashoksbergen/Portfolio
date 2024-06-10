@@ -13,23 +13,10 @@ sessionStorage.setItem(
   independent choices that affect general statistics negatively or positively,
   with the goal of the game being to keep all of these balanced. 
   The difficulty here arises in the fact that the players do not know what choices the others are making,
-  and have to discuss this, without mentioning their choices outright.
+  and have to discuss this, without mentioning the specifics of their decisions. 
   <br><br>
+  The game uses the concept of a crew on a submarine making decisions regarding their resources as a metaphor for a team working together.
   `
-);
-
-sessionStorage.setItem(
-  "SeGa Imagineers",
-  `This was a project made in UnReal Engine 5, for The Imagineers.
-   The goal of this was to experiment with creating a digital visitor's centre in UnReal Engine.
-   For this project I was one of the two programmers that worked on the project,
-   in which we worked with BluePrints.
-   I created the general movement and the interactive elements, that can be seen in the video below.
-   <br><br>
-   This project was done during the first half of 2022-2023, where we had a couple of weeks to create this.
-   <br><br>
-   Client: <a href="https://theimagineers.com/">The Imagineers.</a>
-   `
 );
 
 sessionStorage.setItem(
@@ -54,7 +41,7 @@ sessionStorage.setItem(
   "Elemental Escape",
   `This project was a game I made on my own in around 2-3 weeks.
    The goal of this was to create a game with components of emergent gameplay,
-    as well as some form of procedural level generation. 
+    as well as procedural level generation. 
     <br><br>
     The main concept of the game is a side-scrolling roguelike game where you
     use various elements to move throughout the map and defeat various enemies.
@@ -82,6 +69,7 @@ sessionStorage.setItem(
   by making an interactive page with the planets of the solar system.
   <br><br>
   For this project, I was one of the two developers, me being responsible for the drag-and-drop functionalities.
+  These had to be made from scratch, since they had to work with touch-based inputs, which does not natively have support for drag-and-drop functionality in JavaScript.
   The creation of this prototype took around a week.
   <br><br>
   Github: <a href='https://github.com/Luuk-Meier-21/indietopia-gestural-space'>GitHub</a><br>
@@ -107,4 +95,22 @@ sessionStorage.setItem(
    Github: <a href='https://github.com/Axisas/OpJezelf'>GitHub</a><br>
    Client: <a href='https://dynhus.nl/'>Dynhus</a>
   `
+);
+
+sessionStorage.setItem(
+  "SeGa Imagineers",
+  `This was a project made in UnReal Engine 5, for The Imagineers.
+   The goal of this was to experiment with creating a digital visitor's centre in UnReal Engine.
+   For this project I was one of the two programmers that worked on the project,
+   in which we worked with BluePrints.
+   I created the general movement and camera movement and the interactive elements, which are demonstrated in the video below.
+   <br><br>
+   The project was a proof of concept for creating an interactive visitor's centre that should function like one that could be used in browsers, hence the mouse-based movement.
+   The project was also made to be used by people willing to visit a visitor's centre, which meant the target audience included less tech-experienced users.
+   We tried to make it easier for them to use by using commonly used symbols, as well as making the interactive elements stand out more, with responsive feedback on hover.
+   <br><br>
+   This project was done during the first half of 2022-2023, where we had a couple of weeks to create this.
+   <br><br>
+   Client: <a href="https://theimagineers.com/">The Imagineers.</a>
+   `
 );
