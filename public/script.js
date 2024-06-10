@@ -4,13 +4,6 @@ const popupWindow = document.getElementById("popup");
 const popupWindowClose = document.getElementById("closepopup");
 
 function clickGridItem(project) {
-  // toggle popupwindow
-  grid.style.display = "none";
-  popupWindow.style.display = "flex";
-  popupWindowClose.style.display = "flex";
-  title.style.display = "block";
-  title.innerHTML = project;
-
   for (const child of popupWindow.children) {
     if (child.tagName == "IMG") {
       // replaces the image with an image with the same name as the project chosen.
@@ -24,6 +17,12 @@ function clickGridItem(project) {
       child.src = `vids/${project}.mp4`;
     }
   }
+  // toggle popupwindow
+  grid.style.display = "none";
+  popupWindow.style.display = "flex";
+  popupWindowClose.style.display = "flex";
+  title.style.display = "block";
+  title.innerHTML = project;
 }
 
 function closePopup() {
