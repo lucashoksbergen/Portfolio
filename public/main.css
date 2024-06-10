@@ -1,7 +1,7 @@
 * {
   margin: 0;
   font-family: Verdana, Tahoma, sans-serif;
-  font-size: clamp(0.9rem, 1vw, 1rem);
+  font-size: clamp(0.85rem, 0.9vw, 1rem);
   box-sizing: border-box;
   line-height: 1.5em;
 }
@@ -180,21 +180,28 @@ h1 {
 }
 
 #popup p {
-  width: 30vw;
+  width: 35vw;
   min-width: 400px;
-  margin-right: 1vw;
+  background-color: white;
+  padding: 25px;
+  height: 55vh;
+  margin: 1vh;
+  min-height: 550px;
 }
 
 #popup img {
-  width: 30vw;
-  min-width: 400px;
-  height: auto;
+  /* width: 30vw;
+  min-width: 400px; */
+  height: 55vh;
+  min-height: 600px;
+  width: auto;
+  margin: 1vh;
 }
 
 #popup video {
-  width: 61vw;
+  width: 57vw;
   min-width: 400px;
-  margin-top: 1vh;
+  margin: 1vh;
 }
 
 #closepopup {
