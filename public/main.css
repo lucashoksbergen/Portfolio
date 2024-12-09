@@ -82,8 +82,12 @@ li {
   margin-right: 10px;
 }
 
-.projects {
-  background-color: #6bc9b3;
+.projects,
+button,
+.navbar,
+.bottom,
+.gridproject {
+  box-shadow: 0px 0px 3px 2px lightgray;
 }
 
 button {
@@ -108,6 +112,10 @@ button:hover {
   justify-content: center;
   height: auto;
   margin-bottom: 5vh;
+}
+
+.projects {
+  background-color: #6bc9b3;
 }
 
 .griditem {
