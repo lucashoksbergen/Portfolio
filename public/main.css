@@ -83,11 +83,10 @@ li {
 }
 
 .projects,
-button,
 .navbar,
 .bottom,
 .gridproject {
-  box-shadow: 0px 0px 3px 2px lightgray;
+  box-shadow: 0px 1px 1px 1px lightgray;
 }
 
 button {
