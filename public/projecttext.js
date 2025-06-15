@@ -1,4 +1,32 @@
 sessionStorage.setItem(
+  "Dieren Ambulance Report System",
+  `This is a project for the Dieren Ambulance Friesland. <br>
+  They tasked me and 3 other students with creating a digital system they could use for their reporting of animals. <br>
+  This way the process would be faster than their current system. <br>
+  This would also help them get a cleaner more organized archive.
+  The system is made from the ground up using Laravel, in combination with HTML, CSS and some JS.<br><br>
+  The main features of the system are the following: <br>
+  <ul class='normallist'>
+  <li>Login system for different types of users</li>
+  <li>Automated logging for transferring of drivers when they change shifts</li>
+  <li>Shorter more efficient forms for creating and filling in a report</li>
+  <li>Filter system to look back on finished reports based on various criteria</li>
+  </ul
+  <br><br>Client: <a href='https://dierenambulancefrl.nl/'>dierenambulance FRL</a><br>
+  GitHub: <a href='https://github.com/lucashoksbergen/dierenambulance'>GitHub</a>
+  `
+);
+
+sessionStorage.setItem(
+  "Posting Website",
+  `This is a short personal project that I made on my own in the span of a couple of days. <br>
+  The goal of this was to get more familiar with some of the Laravel components, as this was made when I was starting out with Laravel.<br>
+  The website would function similar to a website like Twitter where users can post short messages with tags to be viewed by other users. <br><br>
+  GitHub: <a href='https://github.com/lucashoksbergen/posting-website'>GitHub</a>
+  `
+);
+
+sessionStorage.setItem(
   "Underwater Cooperation",
   `This was a project that I worked on during the second half of 2022-2023 with a team of 5 people.
   For this project I was the programmer.
@@ -32,7 +60,7 @@ sessionStorage.setItem(
    <br><br>
    The main goal of this game was to make a digital version of a boardgame that could be played individually.
    <br><br>
-    Github: <a href='https://github.com/Axisas/HexSpaceBingo'>GitHub</a>
+    Github: <a href='https://github.com/lucashoksbergen/HexSpaceBingo'>GitHub</a>
    
   `
 );
@@ -54,7 +82,7 @@ sessionStorage.setItem(
     The game was made in Unity,
     with the spritework being made in Aseprite.
     <br><br>
-    Github: <a href='https://github.com/Axisas/Elemental-Game'>GitHub</a>
+    Github: <a href='https://github.com/lucashoksbergen/Elemental-Game'>GitHub</a>
     `
 );
 
@@ -92,7 +120,7 @@ sessionStorage.setItem(
     <br><br>
     The preview below showcases the functionalities of the app, however it is primarily made for mobile devices, hence why the scale might seem off.
    <br><br>
-   Github: <a href='https://github.com/Axisas/OpJezelf'>GitHub</a><br>
+   Github: <a href='https://github.com/lucashoksbergen/OpJezelf'>GitHub</a><br>
    Client: <a href='https://dynhus.nl/'>Dynhus</a>
   `
 );

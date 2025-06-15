@@ -77,10 +77,19 @@ ul {
   padding: 0;
 }
 
+
 li {
   display: inline;
   margin-right: 10px;
 }
+
+.normallist li{
+  display: list-item;
+  list-style: disc;
+  padding-left: 10px;
+  margin-left: 1.5rem;
+}
+
 
 .projects,
 .navbar,
@@ -151,6 +160,7 @@ button:hover {
   overflow: hidden;
   user-select: none;
   position: relative;
+  background-color: white;
 }
 .gridproject p {
   position: absolute;
