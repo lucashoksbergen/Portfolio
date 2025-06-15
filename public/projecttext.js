@@ -12,7 +12,9 @@ sessionStorage.setItem(
   <li>Shorter more efficient forms for creating and filling in a report</li>
   <li>Filter system to look back on finished reports based on various criteria</li>
   </ul
-  <br><br>Client: <a href='https://dierenambulancefrl.nl/'>dierenambulance FRL</a><br>
+  <br><br>
+  The footage seen is still W.I.P.<br><br>
+  Client: <a href='https://dierenambulancefrl.nl/'>dierenambulance FRL</a><br>
   GitHub: <a href='https://github.com/lucashoksbergen/dierenambulance'>GitHub</a>
   `
 );
