@@ -25,6 +25,7 @@ body {
   font-weight: bold;
   height: 5vh;
   min-height: 40px;
+  z-index: 10;
 }
 
 .navbar a:hover {
@@ -36,7 +37,7 @@ body {
   display: inline-block;
   height: 4.9vh;
   min-height: 38.75px;
-  line-height: max(2.9vw, 38.75px);
+  line-height: max(4.8vh, 38.75px);
   padding-left: 20px;
   padding-right: 20px;
   color: black;
@@ -55,7 +56,7 @@ body {
   bottom: 0;
   width: 100vw;
   margin-top: auto;
-  min-height: 120px;
+  min-height: 140px;
   height: 12vh;
   padding-left: 15vw;
   background-color: #6bc9b3;
@@ -77,19 +78,17 @@ ul {
   padding: 0;
 }
 
-
 li {
   display: inline;
   margin-right: 10px;
 }
 
-.normallist li{
+.normallist li {
   display: list-item;
   list-style: disc;
   padding-left: 10px;
   margin-left: 1.5rem;
 }
-
 
 .projects,
 .navbar,
