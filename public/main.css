@@ -13,7 +13,7 @@ body {
   background-color: whitesmoke;
 }
 
-.navbar {
+nav {
   position: sticky;
   display: block;
   box-sizing: content-box;
@@ -28,7 +28,7 @@ body {
   z-index: 10;
 }
 
-.navbar a:hover {
+nav a:hover {
   background-color: #73d9c1;
 }
 
@@ -42,6 +42,7 @@ body {
   padding-right: 20px;
   color: black;
   text-align: center;
+  border-radius: 5px;
 }
 .navbutton:not(.active) {
   text-decoration: none;
@@ -52,7 +53,7 @@ body {
   text-decoration-line: underline;
 }
 
-.bottom {
+footer {
   bottom: 0;
   width: 100vw;
   margin-top: auto;
@@ -62,10 +63,11 @@ body {
   background-color: #6bc9b3;
   display: flex;
   padding-bottom: 15px;
+  box-shadow: 0px -1px 3px 1px lightgray;
 }
 
-.bottom p,
-.bottom a {
+footer p,
+footer a {
   font-weight: bold;
   line-height: 1rem;
   font-size: min(0.9rem, 16px);
@@ -91,10 +93,9 @@ li {
 }
 
 .projects,
-.navbar,
-.bottom,
+nav,
 .gridproject {
-  box-shadow: 0px 1px 1px 1px lightgray;
+  box-shadow: 0px 1px 3px 1px lightgray;
 }
 
 button {
@@ -104,6 +105,7 @@ button {
   letter-spacing: 1px;
   cursor: pointer;
   border: 1px solid black;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -160,6 +162,7 @@ button:hover {
   user-select: none;
   position: relative;
   background-color: white;
+  border-radius: 5px;
 }
 .gridproject p {
   position: absolute;
@@ -190,11 +193,16 @@ h1 {
 #popup {
   display: none;
   padding: 25px;
-  width: 100vw;
+  margin: 0 auto;
+  width: min(100vw, max(70vw, 450px));
   height: auto;
   flex-wrap: wrap;
   justify-content: center;
   animation: fadein 1s;
+  background-color: white;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px 1px lightgray;
 }
 
 @keyframes fadein {
@@ -235,6 +243,7 @@ h1 {
   display: none;
   position: fixed;
   top: max(7vh, 60px);
+  padding-bottom: min(1vw, 4px);
   right: 1vw;
   text-align: center;
   /* using vw for both, so its a square */
@@ -246,10 +255,11 @@ h1 {
   user-select: none;
   cursor: pointer;
   background-color: whitesmoke;
-  border: 2px solid #6bc9b3;
+  border: 3px solid #6bc9b3;
   z-index: 5;
   justify-content: center;
   align-items: center;
+  border-radius: 5px;
 }
 
 #closepopup:hover {
