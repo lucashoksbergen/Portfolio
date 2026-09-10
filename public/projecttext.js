@@ -13,8 +13,8 @@ sessionStorage.setItem(
   <li>Filter system to look back on finished reports based on various criteria</li>
   </ul
   <br><br>
-  The footage seen is still W.I.P.<br><br>
-  Client: <a href='https://dierenambulancefrl.nl/'>dierenambulance FRL</a><br>
+  This project is still a W.I.P.<br><br>
+  Client: <a href='https://dierenambulancefrl.nl/'>Dierenambulance FRL</a><br>
   GitHub: <a href='https://github.com/lucashoksbergen/dierenambulance'>GitHub</a>
   `
 );
