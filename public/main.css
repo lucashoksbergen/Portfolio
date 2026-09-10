@@ -77,19 +77,17 @@ ul {
   padding: 0;
 }
 
-
 li {
   display: inline;
   margin-right: 10px;
 }
 
-.normallist li{
+.normallist li {
   display: list-item;
   list-style: disc;
   padding-left: 10px;
   margin-left: 1.5rem;
 }
-
 
 .projects,
 .navbar,
@@ -141,10 +139,6 @@ button:hover {
   padding: 15px;
 }
 
-#logos {
-  margin-left: 50px;
-  margin-top: 20px;
-}
 #photo {
   width: 80%;
   border-radius: 50%;
